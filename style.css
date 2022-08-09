@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+/* CSS Reset  */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Main Site  */
+.container {
+    display: flex;
+}
+
+/* Nav Bar  */
+
+.sidebar {
+    background-color: rgb(179, 179, 179);
+    /* width: 10vw; */
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    transition: 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 30px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 15px 0;
+    /* text-align: center; */
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+.sidebar nav li a:hover {
+    color: whitesmoke;
+}
+
+.main {
+    /* background-color: cyan; */
+    width: 100vw;
+    padding: 23px;
+}
+
+/* Main Content */
+.infoContainer {
+    /* background-color: rgb(255, 251, 183); */
+    height: 60vh;
+    width: 80vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.devinfo .hello {
+    font-size: 3.1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.devinfo .name {
+    font-size: 2.8rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.devinfo .about {
+    font-size: 2rem;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.devinfo .moreabout {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.devpic img {
+    height: 60vh;
+    padding-left: 34px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 6px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+    /* display: flex; */
+}
+
+
+.btn:hover {
+    background-color: white;
+    color: grey;
+}
+
+/* Contact Form  */
+
+.btn-sm {
+    padding: 6px 14px;
+}
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid black; */
+
+}
+
+form {
+    border: 4px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+.contactform h1 {
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+}
+
+.contactform div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: red;
+    margin: 5px 1px;
+}
+
+.contactform div .form-control {
+    width: 14vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-check input {
+    width: 100px;
+    margin: 3px 0;
+}
+
+#exampleCheck1 {
+    width: 1vw;
+}
+
+.form-check-label {
+    padding-left: 30px;
+    margin-top: -22px;
+}
+
+/* Blog Page  */
+
+.blogitem {
+    margin: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blogitem h2 {
+    font-family: 'Source Code Pro', monospace;
+    margin: 13px;
+}
+
+.blogitem p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.blogcontainer h1 {
+    font-family: 'fira sans', sans-serif;
+    margin: 23px;
+}
+
+/* About Me  */
+
+.devinfo .about-me {
+    font-size: large;
+}
+
+.devinfo .my-skills {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.graph-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px 22px 15px 5px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 5px 22px 15px 5px;
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+
+}
+
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.python {
+    width: 60%;
+    background-color: blueviolet;
+}
+
+.graph p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hamburger */
+
+#hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+}
+
+.cross {
+    margin-left: -212px;
+}
+
+#sidebargo {
+    transform: translate(-0px, 0px);
+    position: absolute;
+}
+
+@media (max-width: 963px) {
+    .devinfo{
+        display: flex;
+        /* font-size: 1rem; */
+    }
+    
+    .devpic{
+        display: none;
+    }
+    
+    .sidebar{
+        transform: translate(-160px, 0px);
+        position: absolute;
+    }
+
+    .btn{
+        display: flex;
+    }
+} 
